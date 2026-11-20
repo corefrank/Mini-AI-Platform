@@ -1,0 +1,455 @@
+[
+  {
+    "id": "Q01",
+    "type": "fact",
+    "query": "How does FastAPI execute regular def and async def path operation functions?",
+    "query_zh": "FastAPI 中 async def 和普通 def 路由各自如何执行？",
+    "answer": "普通 def 路由由外部线程池执行并等待。async def 路由运行在事件循环中，适合 await 非阻塞 I/O。",
+    "references": [
+      {
+        "document_id": "fastapi-async",
+        "location": "external threadpool",
+        "line": 418,
+        "source_url": "https://fastapi.tiangolo.com/async/"
+      }
+    ]
+  },
+  {
+    "id": "Q02",
+    "type": "compare",
+    "query": "When should I use FastAPI BackgroundTasks instead of a Celery worker and message broker?",
+    "query_zh": "FastAPI BackgroundTasks 和 Celery Worker 分别适合什么样的任务？",
+    "answer": "BackgroundTasks 适合同进程、响应发出后的短任务。Celery 通过消息代理交给独立 Worker，适合重任务或跨进程执行。",
+    "references": [
+      {
+        "document_id": "fastapi-tutorial-background-tasks",
+        "location": "Caveat",
+        "line": 76,
+        "source_url": "https://fastapi.tiangolo.com/tutorial/background-tasks/"
+      },
+      {
+        "document_id": "celery-getting-started-introduction",
+        "location": "broker then delivers",
+        "line": 22,
+        "source_url": "https://docs.celeryq.dev/en/stable/getting-started/introduction.html"
+      }
+    ]
+  },
+  {
+    "id": "Q03",
+    "type": "concept",
+    "query": "Does JWT signing make the payload confidential?",
+    "query_zh": "JWT 签名会对载荷保密吗？",
+    "answer": "签名用于验证完整性和来源，JWT 的载荷可以解码读取，因此不应放秘密。",
+    "references": [
+      {
+        "document_id": "fastapi-tutorial-security-oauth2-jwt",
+        "location": "About JWT",
+        "line": 9,
+        "source_url": "https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/"
+      }
+    ]
+  },
+  {
+    "id": "Q04",
+    "type": "fact",
+    "query": "How can a FastAPI database dependency close its session after yield?",
+    "query_zh": "FastAPI 的 yield 依赖如何在使用完后关闭数据库会话？",
+    "answer": "先创建并 yield Session，随后在 finally 关闭，或在 with 块退出时释放。",
+    "references": [
+      {
+        "document_id": "fastapi-tutorial-dependencies-dependencies-with-yield",
+        "location": "A database dependency",
+        "line": 26,
+        "source_url": "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-with-yield/"
+      }
+    ]
+  },
+  {
+    "id": "Q05",
+    "type": "fact",
+    "query": "Which header causes a CORS OPTIONS preflight and what middleware handles it?",
+    "query_zh": "浏览器的 CORS OPTIONS 预检有什么标志，FastAPI 用什么处理？",
+    "answer": "预检是带 Origin 和 Access-Control-Request-Method 的 OPTIONS。由 CORSMiddleware 处理。",
+    "references": [
+      {
+        "document_id": "fastapi-tutorial-cors",
+        "location": "CORS preflight requests",
+        "line": 69,
+        "source_url": "https://fastapi.tiangolo.com/tutorial/cors/"
+      }
+    ]
+  },
+  {
+    "id": "Q06",
+    "type": "concept",
+    "query": "What HTTP media type is used for Server-Sent Events?",
+    "query_zh": "SSE 使用哪一种 HTTP 媒体类型？",
+    "answer": "使用 text/event-stream，服务端持续发送事件。",
+    "references": [
+      {
+        "document_id": "fastapi-tutorial-server-sent-events",
+        "location": "text/event-stream",
+        "line": 5,
+        "source_url": "https://fastapi.tiangolo.com/tutorial/server-sent-events/"
+      }
+    ]
+  },
+  {
+    "id": "Q07",
+    "type": "fact",
+    "query": "How do you read the value of a Vue ref in JavaScript?",
+    "query_zh": "JavaScript 逻辑中怎样读 Vue ref 的值？",
+    "answer": "在 JavaScript 中使用 .value，模板中常见的顶层 ref 会自动解包。",
+    "references": [
+      {
+        "document_id": "vue-essentials-reactivity-fundamentals",
+        "location": "ref()",
+        "line": 68,
+        "source_url": "https://vuejs.org/guide/essentials/reactivity-fundamentals.html"
+      }
+    ]
+  },
+  {
+    "id": "Q08",
+    "type": "compare",
+    "query": "How does Vue v-model simplify reactive form handling compared with manual event binding?",
+    "query_zh": "Vue 表单中 v-model 怎样简化手动绑定值和监听输入事件？",
+    "answer": "v-model 将输入值与响应式状态绑定，省去逐个手写属性绑定和输入事件处理器。",
+    "references": [
+      {
+        "document_id": "vue-essentials-forms",
+        "location": "v-model",
+        "line": 36,
+        "source_url": "https://vuejs.org/guide/essentials/forms.html"
+      },
+      {
+        "document_id": "vue-essentials-event-handling",
+        "location": "Listening to Events",
+        "line": 11,
+        "source_url": "https://vuejs.org/guide/essentials/event-handling.html"
+      }
+    ]
+  },
+  {
+    "id": "Q09",
+    "type": "concept",
+    "query": "Why does Vue computed cache its value but a method may run on each render?",
+    "query_zh": "Vue computed 属性和方法相比，为什么会缓存计算结果？",
+    "answer": "computed 会跟踪响应式依赖，依赖未改变时复用结果。方法在相关渲染中再次调用会重新执行。",
+    "references": [
+      {
+        "document_id": "vue-essentials-computed",
+        "location": "Computed Caching vs. Methods",
+        "line": 141,
+        "source_url": "https://vuejs.org/guide/essentials/computed.html"
+      }
+    ]
+  },
+  {
+    "id": "Q10",
+    "type": "fact",
+    "query": "Why should v-for items have a stable key in Vue?",
+    "query_zh": "Vue 的 v-for 为什么要给项设置稳定的 key？",
+    "answer": "key 让 Vue 跟踪节点身份，在重排列表时正确复用节点，特别是包含组件或输入状态时。",
+    "references": [
+      {
+        "document_id": "vue-essentials-list",
+        "location": "Maintaining State with",
+        "line": 258,
+        "source_url": "https://vuejs.org/guide/essentials/list.html"
+      }
+    ]
+  },
+  {
+    "id": "Q11",
+    "type": "concept",
+    "query": "How does watch differ from watchEffect in Vue?",
+    "query_zh": "Vue 的 watch 和 watchEffect 如何跟踪依赖？",
+    "answer": "watch 只跟踪显式指定的来源。watchEffect 自动追踪同步执行时读取到的响应式依赖。",
+    "references": [
+      {
+        "document_id": "vue-essentials-watchers",
+        "location": "{#watch-vs-watcheffect}",
+        "line": 359,
+        "source_url": "https://vuejs.org/guide/essentials/watchers.html"
+      }
+    ]
+  },
+  {
+    "id": "Q12",
+    "type": "fact",
+    "query": "What does Redis TTL return for a missing key and for a key with no expiration?",
+    "query_zh": "Redis TTL 对不存在的键和没有过期时间的键分别返回什么？",
+    "answer": "Redis 2.8 起，不存在键返回 -2，存在但无过期时间返回 -1。",
+    "references": [
+      {
+        "document_id": "redis-commands-ttl",
+        "location": "Starting with Redis 2.8",
+        "line": 7,
+        "source_url": "https://redis.io/docs/latest/commands/ttl/"
+      }
+    ]
+  },
+  {
+    "id": "Q13",
+    "type": "fact",
+    "query": "What does Redis EXPIRE do to a key after its timeout elapses?",
+    "query_zh": "Redis 的 EXPIRE 到期后对键有何影响？",
+    "answer": "EXPIRE 给键设置超时。到期后键会自动删除。",
+    "references": [
+      {
+        "document_id": "redis-commands-expire",
+        "location": "automatically be deleted",
+        "line": 2,
+        "source_url": "https://redis.io/docs/latest/commands/expire/"
+      }
+    ]
+  },
+  {
+    "id": "Q14",
+    "type": "compare",
+    "query": "In Redis, what is the difference between TTL and PTTL?",
+    "query_zh": "Redis 的 TTL 和 PTTL 在返回值单位上有什么区别？",
+    "answer": "TTL 返回剩余秒数，PTTL 返回剩余毫秒数。",
+    "references": [
+      {
+        "document_id": "redis-commands-ttl",
+        "location": "how many seconds",
+        "line": 2,
+        "source_url": "https://redis.io/docs/latest/commands/ttl/"
+      },
+      {
+        "document_id": "redis-commands-pttl",
+        "location": "in milliseconds",
+        "line": 3,
+        "source_url": "https://redis.io/docs/latest/commands/pttl/"
+      }
+    ]
+  },
+  {
+    "id": "Q15",
+    "type": "compare",
+    "query": "How do EXPIRE and PERSIST change the lifetime of a Redis key?",
+    "query_zh": "Redis 的 EXPIRE 和 PERSIST 分别怎样影响键的生命周期？",
+    "answer": "EXPIRE 为键设置过期时间，PERSIST 移除已有的过期时间，使同一个键变为持久键。",
+    "references": [
+      {
+        "document_id": "redis-commands-expire",
+        "location": "Set a timeout",
+        "line": 1,
+        "source_url": "https://redis.io/docs/latest/commands/expire/"
+      },
+      {
+        "document_id": "redis-commands-persist",
+        "location": "Remove the existing timeout",
+        "line": 1,
+        "source_url": "https://redis.io/docs/latest/commands/persist/"
+      }
+    ]
+  },
+  {
+    "id": "Q16",
+    "type": "fact",
+    "query": "Which Redis SET option writes only if the key does not already exist?",
+    "query_zh": "Redis SET 的哪个选项只在键不存在时写入？",
+    "answer": "使用 NX。XX 的限定条件相反。",
+    "references": [
+      {
+        "document_id": "redis-commands-set",
+        "location": "Only set the key if",
+        "line": 25,
+        "source_url": "https://redis.io/docs/latest/commands/set/"
+      }
+    ]
+  },
+  {
+    "id": "Q17",
+    "type": "fact",
+    "query": "How can Redis XREAD wait for new stream entries?",
+    "query_zh": "Redis XREAD 如何等待新的 Stream 条目？",
+    "answer": "用 BLOCK 指定阻塞等待；当有 ID 大于所传 ID 的条目时读取。",
+    "references": [
+      {
+        "document_id": "redis-commands-xread",
+        "location": "Blocking for data",
+        "line": 160,
+        "source_url": "https://redis.io/docs/latest/commands/xread/"
+      }
+    ]
+  },
+  {
+    "id": "Q18",
+    "type": "concept",
+    "query": "What is the role of the broker and worker in Celery task execution?",
+    "query_zh": "Celery 执行任务时，Broker 和 Worker 各自有什么作用？",
+    "answer": "客户端把任务消息发送给 Broker，Worker 从队列取出消息并调用任务代码。",
+    "references": [
+      {
+        "document_id": "celery-getting-started-introduction",
+        "location": "broker then delivers",
+        "line": 22,
+        "source_url": "https://docs.celeryq.dev/en/stable/getting-started/introduction.html"
+      }
+    ]
+  },
+  {
+    "id": "Q19",
+    "type": "fact",
+    "query": "What does calling self.retry in a bound Celery task do?",
+    "query_zh": "绑定 Celery 任务中的 self.retry 会做什么？",
+    "answer": "self.retry 为重试发送新消息，复用任务 ID，通常抛 Retry 通知 Worker 这次执行需要重试。",
+    "references": [
+      {
+        "document_id": "celery-userguide-tasks",
+        "location": "Retrying",
+        "line": 592,
+        "source_url": "https://docs.celeryq.dev/en/stable/userguide/tasks.html"
+      }
+    ]
+  },
+  {
+    "id": "Q20",
+    "type": "fact",
+    "query": "What does the Redis broker visibility timeout control in Celery?",
+    "query_zh": "Celery 使用 Redis Broker 时，visibility timeout 控制什么？",
+    "answer": "它规定在消息未被确认时等待多久才重新投递给 Worker。",
+    "references": [
+      {
+        "document_id": "celery-getting-started-backends-and-brokers-redis",
+        "location": "Visibility Timeout",
+        "line": 76,
+        "source_url": "https://docs.celeryq.dev/en/stable/getting-started/backends-and-brokers/redis.html"
+      }
+    ]
+  },
+  {
+    "id": "Q21",
+    "type": "concept",
+    "query": "How do apply_async and delay differ in Celery?",
+    "query_zh": "Celery 的 apply_async 和 delay 有何区别？",
+    "answer": "delay 是便捷写法，不能传执行选项；apply_async 可指定执行选项，例如倒计时。",
+    "references": [
+      {
+        "document_id": "celery-userguide-calling",
+        "location": "Basics",
+        "line": 12,
+        "source_url": "https://docs.celeryq.dev/en/stable/userguide/calling.html"
+      }
+    ]
+  },
+  {
+    "id": "Q22",
+    "type": "fact",
+    "query": "How can Docker Compose services locate one another on the default network?",
+    "query_zh": "Docker Compose 的服务在默认网络上如何找到彼此？",
+    "answer": "通过服务名进行 DNS 解析，内部通信使用服务容器端口。",
+    "references": [
+      {
+        "document_id": "docker-compose-how-tos-networking",
+        "location": "Default network and service discovery",
+        "line": 3,
+        "source_url": "https://docs.docker.com/compose/how-tos/networking/"
+      }
+    ]
+  },
+  {
+    "id": "Q23",
+    "type": "fact",
+    "query": "How does Compose wait for a database healthcheck before starting a dependent service?",
+    "query_zh": "Docker Compose 怎样等待数据库健康检查通过后再启动依赖服务？",
+    "answer": "在 depends_on 下设置 condition: service_healthy，并给数据库服务配置 healthcheck。",
+    "references": [
+      {
+        "document_id": "docker-compose-how-tos-startup-order",
+        "location": "service_healthy",
+        "line": 15,
+        "source_url": "https://docs.docker.com/compose/how-tos/startup-order/"
+      }
+    ]
+  },
+  {
+    "id": "Q24",
+    "type": "concept",
+    "query": "What happens to data in a Docker named volume when a container is removed?",
+    "query_zh": "删除容器后，Docker 命名卷里的数据会怎样？",
+    "answer": "卷的生命周期独立于容器，删除容器不会自动删除命名卷。",
+    "references": [
+      {
+        "document_id": "docker-engine-storage-volumes",
+        "location": "A volume's lifecycle",
+        "line": 45,
+        "source_url": "https://docs.docker.com/engine/storage/volumes/"
+      }
+    ]
+  },
+  {
+    "id": "Q25",
+    "type": "concept",
+    "query": "Why does a multi-stage Docker build use more than one FROM instruction?",
+    "query_zh": "Docker 多阶段构建为什么有多个 FROM？",
+    "answer": "每个 FROM 开始一个阶段，最终阶段可以只复制构建产物，减少运行镜像里的构建依赖。",
+    "references": [
+      {
+        "document_id": "docker-build-building-multi-stage",
+        "location": "Use multi-stage builds",
+        "line": 4,
+        "source_url": "https://docs.docker.com/build/building/multi-stage/"
+      }
+    ]
+  },
+  {
+    "id": "Q26",
+    "type": "concept",
+    "query": "How do workflows and agents differ in LangGraph execution paths?",
+    "query_zh": "在 LangGraph 的定义中，Workflow 和 Agent 的执行路径有什么区别？",
+    "answer": "Workflow 按预定路径组织 LLM 和工具，Agent 让模型动态决定过程和工具。",
+    "references": [
+      {
+        "document_id": "langgraph-workflows-agents",
+        "location": "predetermined",
+        "line": 3,
+        "source_url": "https://docs.langchain.com/oss/python/langgraph/workflows-agents"
+      }
+    ]
+  },
+  {
+    "id": "Q27",
+    "type": "fact",
+    "query": "How do you resume a LangGraph graph after an interrupt?",
+    "query_zh": "LangGraph 图在 interrupt 暂停后，怎样恢复执行？",
+    "answer": "使用同一个 thread_id，并用 Command 携带 resume 值重新调用图，依赖 checkpointer 恢复。",
+    "references": [
+      {
+        "document_id": "langgraph-interrupts",
+        "location": "Resuming interrupts",
+        "line": 68,
+        "source_url": "https://docs.langchain.com/oss/python/langgraph/interrupts"
+      }
+    ]
+  },
+  {
+    "id": "Q28",
+    "type": "unanswerable",
+    "query": "What are the internal production database credentials of the company that uses this platform?",
+    "query_zh": "使用这个平台的公司，其生产数据库凭据是什么？",
+    "answer": "语料没有这类内部事实，明确表示无法回答。",
+    "references": []
+  },
+  {
+    "id": "Q29",
+    "type": "unanswerable",
+    "query": "Which supplier will win the Shenzhen Metro line 99 contract next year?",
+    "query_zh": "明年哪家供应商会中标深圳地铁 99 号线？",
+    "answer": "语料不涉及该招标，明确表示没有来源。",
+    "references": []
+  },
+  {
+    "id": "Q30",
+    "type": "unanswerable",
+    "query": "What was our local platform's p95 request latency during yesterday's peak traffic?",
+    "query_zh": "这个本地平台昨天高峰期的 p95 请求延迟是多少？",
+    "answer": "语料并不包含项目实际流量与延迟测量，不编造数值。",
+    "references": []
+  }
+]

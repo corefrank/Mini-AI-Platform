@@ -1,0 +1,608 @@
+{
+  "sources": [
+    {
+      "category": "FastAPI",
+      "repository": "fastapi/fastapi",
+      "revision": "05e6df7e906c3decba377c37548019973f40bf15",
+      "license": "MIT",
+      "license_url": "https://github.com/fastapi/fastapi/blob/05e6df7e906c3decba377c37548019973f40bf15/LICENSE"
+    },
+    {
+      "category": "Vue",
+      "repository": "vuejs/docs",
+      "revision": "f66b5825d64a722ea6abc6eaae9974aa09c0c109",
+      "license": "CC-BY-4.0",
+      "license_url": "https://github.com/vuejs/docs/blob/f66b5825d64a722ea6abc6eaae9974aa09c0c109/LICENSE"
+    },
+    {
+      "category": "Redis",
+      "repository": "redis/docs",
+      "revision": "96e6122135479e2fa1f728cbf441b7dbd8230ac7",
+      "license": "CC-BY-NC-SA-4.0 (see upstream for legacy exceptions)",
+      "license_url": "https://github.com/redis/docs/blob/96e6122135479e2fa1f728cbf441b7dbd8230ac7/LICENSE"
+    },
+    {
+      "category": "Celery",
+      "repository": "celery/celery",
+      "revision": "a2d470f198444db889608537a5792216b447429e",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://github.com/celery/celery/blob/a2d470f198444db889608537a5792216b447429e/docs/copyright.rst"
+    },
+    {
+      "category": "Docker",
+      "repository": "docker/docs",
+      "revision": "468be39d4b3cbcf64b3df9ecb0615952c1d7e49e",
+      "license": "Apache-2.0 (repository text)",
+      "license_url": "https://github.com/docker/docs/blob/468be39d4b3cbcf64b3df9ecb0615952c1d7e49e/LICENSE"
+    },
+    {
+      "category": "LangGraph",
+      "repository": "langchain-ai/docs",
+      "revision": "e82176e9a77e5de3273256a89ba4f670da5fcf7f",
+      "license": "MIT (repository text)",
+      "license_url": "https://github.com/langchain-ai/docs/blob/e82176e9a77e5de3273256a89ba4f670da5fcf7f/LICENSE"
+    }
+  ],
+  "documents": [
+    {
+      "document_id": "fastapi-async",
+      "title": "Concurrency and async / await",
+      "category": "FastAPI",
+      "path": "docs/en/docs/async.md",
+      "source_url": "https://fastapi.tiangolo.com/async/"
+    },
+    {
+      "document_id": "fastapi-tutorial-first-steps",
+      "title": "First Steps",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/first-steps.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/first-steps/"
+    },
+    {
+      "document_id": "fastapi-tutorial-path-params",
+      "title": "Path Parameters",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/path-params.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/"
+    },
+    {
+      "document_id": "fastapi-tutorial-query-params",
+      "title": "Query Parameters",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/query-params.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/query-params/"
+    },
+    {
+      "document_id": "fastapi-tutorial-body",
+      "title": "Request Body",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/body.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/body/"
+    },
+    {
+      "document_id": "fastapi-tutorial-body-updates",
+      "title": "Body Updates",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/body-updates.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/body-updates/"
+    },
+    {
+      "document_id": "fastapi-tutorial-response-model",
+      "title": "Response Model",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/response-model.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/response-model/"
+    },
+    {
+      "document_id": "fastapi-tutorial-response-status-code",
+      "title": "Response Status Code",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/response-status-code.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/response-status-code/"
+    },
+    {
+      "document_id": "fastapi-tutorial-dependencies",
+      "title": "Dependencies",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/dependencies/index.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/dependencies/"
+    },
+    {
+      "document_id": "fastapi-tutorial-dependencies-dependencies-with-yield",
+      "title": "Dependencies with yield",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/dependencies/dependencies-with-yield.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-with-yield/"
+    },
+    {
+      "document_id": "fastapi-tutorial-security-get-current-user",
+      "title": "Get Current User",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/security/get-current-user.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/security/get-current-user/"
+    },
+    {
+      "document_id": "fastapi-tutorial-security-oauth2-jwt",
+      "title": "OAuth2 with Password, Hashing and JWT",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/security/oauth2-jwt.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/"
+    },
+    {
+      "document_id": "fastapi-tutorial-sql-databases",
+      "title": "SQL Databases",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/sql-databases.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/sql-databases/"
+    },
+    {
+      "document_id": "fastapi-tutorial-cors",
+      "title": "CORS",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/cors.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/cors/"
+    },
+    {
+      "document_id": "fastapi-tutorial-request-files",
+      "title": "Request Files",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/request-files.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/request-files/"
+    },
+    {
+      "document_id": "fastapi-tutorial-handling-errors",
+      "title": "Handling Errors",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/handling-errors.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/handling-errors/"
+    },
+    {
+      "document_id": "fastapi-tutorial-middleware",
+      "title": "Middleware",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/middleware.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/middleware/"
+    },
+    {
+      "document_id": "fastapi-tutorial-background-tasks",
+      "title": "Background Tasks",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/background-tasks.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/background-tasks/"
+    },
+    {
+      "document_id": "fastapi-tutorial-server-sent-events",
+      "title": "Server-Sent Events",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/server-sent-events.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/server-sent-events/"
+    },
+    {
+      "document_id": "fastapi-tutorial-testing",
+      "title": "Testing",
+      "category": "FastAPI",
+      "path": "docs/en/docs/tutorial/testing.md",
+      "source_url": "https://fastapi.tiangolo.com/tutorial/testing/"
+    },
+    {
+      "document_id": "vue-essentials-application",
+      "title": "Creating a Vue Application",
+      "category": "Vue",
+      "path": "src/guide/essentials/application.md",
+      "source_url": "https://vuejs.org/guide/essentials/application.html"
+    },
+    {
+      "document_id": "vue-essentials-template-syntax",
+      "title": "Template Syntax",
+      "category": "Vue",
+      "path": "src/guide/essentials/template-syntax.md",
+      "source_url": "https://vuejs.org/guide/essentials/template-syntax.html"
+    },
+    {
+      "document_id": "vue-essentials-reactivity-fundamentals",
+      "title": "Reactivity Fundamentals",
+      "category": "Vue",
+      "path": "src/guide/essentials/reactivity-fundamentals.md",
+      "source_url": "https://vuejs.org/guide/essentials/reactivity-fundamentals.html"
+    },
+    {
+      "document_id": "vue-essentials-computed",
+      "title": "Computed Properties",
+      "category": "Vue",
+      "path": "src/guide/essentials/computed.md",
+      "source_url": "https://vuejs.org/guide/essentials/computed.html"
+    },
+    {
+      "document_id": "vue-essentials-conditional",
+      "title": "Conditional Rendering",
+      "category": "Vue",
+      "path": "src/guide/essentials/conditional.md",
+      "source_url": "https://vuejs.org/guide/essentials/conditional.html"
+    },
+    {
+      "document_id": "vue-essentials-list",
+      "title": "List Rendering",
+      "category": "Vue",
+      "path": "src/guide/essentials/list.md",
+      "source_url": "https://vuejs.org/guide/essentials/list.html"
+    },
+    {
+      "document_id": "vue-essentials-event-handling",
+      "title": "Event Handling",
+      "category": "Vue",
+      "path": "src/guide/essentials/event-handling.md",
+      "source_url": "https://vuejs.org/guide/essentials/event-handling.html"
+    },
+    {
+      "document_id": "vue-essentials-forms",
+      "title": "Form Input Bindings",
+      "category": "Vue",
+      "path": "src/guide/essentials/forms.md",
+      "source_url": "https://vuejs.org/guide/essentials/forms.html"
+    },
+    {
+      "document_id": "vue-essentials-lifecycle",
+      "title": "Lifecycle Hooks",
+      "category": "Vue",
+      "path": "src/guide/essentials/lifecycle.md",
+      "source_url": "https://vuejs.org/guide/essentials/lifecycle.html"
+    },
+    {
+      "document_id": "vue-essentials-template-refs",
+      "title": "Template Refs",
+      "category": "Vue",
+      "path": "src/guide/essentials/template-refs.md",
+      "source_url": "https://vuejs.org/guide/essentials/template-refs.html"
+    },
+    {
+      "document_id": "vue-essentials-watchers",
+      "title": "Watchers",
+      "category": "Vue",
+      "path": "src/guide/essentials/watchers.md",
+      "source_url": "https://vuejs.org/guide/essentials/watchers.html"
+    },
+    {
+      "document_id": "vue-essentials-component-basics",
+      "title": "Components Basics",
+      "category": "Vue",
+      "path": "src/guide/essentials/component-basics.md",
+      "source_url": "https://vuejs.org/guide/essentials/component-basics.html"
+    },
+    {
+      "document_id": "vue-components-props",
+      "title": "Props",
+      "category": "Vue",
+      "path": "src/guide/components/props.md",
+      "source_url": "https://vuejs.org/guide/components/props.html"
+    },
+    {
+      "document_id": "vue-components-events",
+      "title": "Component Events",
+      "category": "Vue",
+      "path": "src/guide/components/events.md",
+      "source_url": "https://vuejs.org/guide/components/events.html"
+    },
+    {
+      "document_id": "vue-components-v-model",
+      "title": "Component v-model",
+      "category": "Vue",
+      "path": "src/guide/components/v-model.md",
+      "source_url": "https://vuejs.org/guide/components/v-model.html"
+    },
+    {
+      "document_id": "redis-commands-get",
+      "title": "GET",
+      "category": "Redis",
+      "path": "content/commands/get.md",
+      "source_url": "https://redis.io/docs/latest/commands/get/"
+    },
+    {
+      "document_id": "redis-commands-set",
+      "title": "SET",
+      "category": "Redis",
+      "path": "content/commands/set.md",
+      "source_url": "https://redis.io/docs/latest/commands/set/"
+    },
+    {
+      "document_id": "redis-commands-expire",
+      "title": "EXPIRE",
+      "category": "Redis",
+      "path": "content/commands/expire.md",
+      "source_url": "https://redis.io/docs/latest/commands/expire/"
+    },
+    {
+      "document_id": "redis-commands-ttl",
+      "title": "TTL",
+      "category": "Redis",
+      "path": "content/commands/ttl.md",
+      "source_url": "https://redis.io/docs/latest/commands/ttl/"
+    },
+    {
+      "document_id": "redis-commands-pttl",
+      "title": "PTTL",
+      "category": "Redis",
+      "path": "content/commands/pttl.md",
+      "source_url": "https://redis.io/docs/latest/commands/pttl/"
+    },
+    {
+      "document_id": "redis-commands-persist",
+      "title": "PERSIST",
+      "category": "Redis",
+      "path": "content/commands/persist.md",
+      "source_url": "https://redis.io/docs/latest/commands/persist/"
+    },
+    {
+      "document_id": "redis-commands-del",
+      "title": "DEL",
+      "category": "Redis",
+      "path": "content/commands/del.md",
+      "source_url": "https://redis.io/docs/latest/commands/del/"
+    },
+    {
+      "document_id": "redis-commands-incr",
+      "title": "INCR",
+      "category": "Redis",
+      "path": "content/commands/incr.md",
+      "source_url": "https://redis.io/docs/latest/commands/incr/"
+    },
+    {
+      "document_id": "redis-commands-hset",
+      "title": "HSET",
+      "category": "Redis",
+      "path": "content/commands/hset.md",
+      "source_url": "https://redis.io/docs/latest/commands/hset/"
+    },
+    {
+      "document_id": "redis-commands-lpush",
+      "title": "LPUSH",
+      "category": "Redis",
+      "path": "content/commands/lpush.md",
+      "source_url": "https://redis.io/docs/latest/commands/lpush/"
+    },
+    {
+      "document_id": "redis-commands-lrange",
+      "title": "LRANGE",
+      "category": "Redis",
+      "path": "content/commands/lrange.md",
+      "source_url": "https://redis.io/docs/latest/commands/lrange/"
+    },
+    {
+      "document_id": "redis-commands-xadd",
+      "title": "XADD",
+      "category": "Redis",
+      "path": "content/commands/xadd.md",
+      "source_url": "https://redis.io/docs/latest/commands/xadd/"
+    },
+    {
+      "document_id": "redis-commands-xread",
+      "title": "XREAD",
+      "category": "Redis",
+      "path": "content/commands/xread.md",
+      "source_url": "https://redis.io/docs/latest/commands/xread/"
+    },
+    {
+      "document_id": "redis-commands-publish",
+      "title": "PUBLISH",
+      "category": "Redis",
+      "path": "content/commands/publish.md",
+      "source_url": "https://redis.io/docs/latest/commands/publish/"
+    },
+    {
+      "document_id": "redis-commands-subscribe",
+      "title": "SUBSCRIBE",
+      "category": "Redis",
+      "path": "content/commands/subscribe.md",
+      "source_url": "https://redis.io/docs/latest/commands/subscribe/"
+    },
+    {
+      "document_id": "celery-getting-started-introduction",
+      "title": "Introduction to Celery",
+      "category": "Celery",
+      "path": "docs/getting-started/introduction.rst",
+      "source_url": "https://docs.celeryq.dev/en/stable/getting-started/introduction.html"
+    },
+    {
+      "document_id": "celery-getting-started-first-steps-with-celery",
+      "title": "First Steps with Celery",
+      "category": "Celery",
+      "path": "docs/getting-started/first-steps-with-celery.rst",
+      "source_url": "https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html"
+    },
+    {
+      "document_id": "celery-getting-started-backends-and-brokers-redis",
+      "title": "Using Redis",
+      "category": "Celery",
+      "path": "docs/getting-started/backends-and-brokers/redis.rst",
+      "source_url": "https://docs.celeryq.dev/en/stable/getting-started/backends-and-brokers/redis.html"
+    },
+    {
+      "document_id": "celery-userguide-tasks",
+      "title": "Tasks",
+      "category": "Celery",
+      "path": "docs/userguide/tasks.rst",
+      "source_url": "https://docs.celeryq.dev/en/stable/userguide/tasks.html"
+    },
+    {
+      "document_id": "celery-userguide-calling",
+      "title": "Calling Tasks",
+      "category": "Celery",
+      "path": "docs/userguide/calling.rst",
+      "source_url": "https://docs.celeryq.dev/en/stable/userguide/calling.html"
+    },
+    {
+      "document_id": "celery-userguide-workers",
+      "title": "Workers Guide",
+      "category": "Celery",
+      "path": "docs/userguide/workers.rst",
+      "source_url": "https://docs.celeryq.dev/en/stable/userguide/workers.html"
+    },
+    {
+      "document_id": "celery-userguide-configuration",
+      "title": "Configuration and Defaults",
+      "category": "Celery",
+      "path": "docs/userguide/configuration.rst",
+      "source_url": "https://docs.celeryq.dev/en/stable/userguide/configuration.html"
+    },
+    {
+      "document_id": "celery-userguide-optimizing",
+      "title": "Optimizing",
+      "category": "Celery",
+      "path": "docs/userguide/optimizing.rst",
+      "source_url": "https://docs.celeryq.dev/en/stable/userguide/optimizing.html"
+    },
+    {
+      "document_id": "celery-userguide-testing",
+      "title": "Testing with Celery",
+      "category": "Celery",
+      "path": "docs/userguide/testing.rst",
+      "source_url": "https://docs.celeryq.dev/en/stable/userguide/testing.html"
+    },
+    {
+      "document_id": "celery-userguide-monitoring",
+      "title": "Monitoring and Management Guide",
+      "category": "Celery",
+      "path": "docs/userguide/monitoring.rst",
+      "source_url": "https://docs.celeryq.dev/en/stable/userguide/monitoring.html"
+    },
+    {
+      "document_id": "docker-compose-intro-compose-application-model",
+      "title": "Compose Application Model",
+      "category": "Docker",
+      "path": "content/manuals/compose/intro/compose-application-model.md",
+      "source_url": "https://docs.docker.com/compose/intro/compose-application-model/"
+    },
+    {
+      "document_id": "docker-compose-how-tos-networking",
+      "title": "Networking in Compose",
+      "category": "Docker",
+      "path": "content/manuals/compose/how-tos/networking.md",
+      "source_url": "https://docs.docker.com/compose/how-tos/networking/"
+    },
+    {
+      "document_id": "docker-compose-how-tos-startup-order",
+      "title": "Control Startup and Shutdown Order in Compose",
+      "category": "Docker",
+      "path": "content/manuals/compose/how-tos/startup-order.md",
+      "source_url": "https://docs.docker.com/compose/how-tos/startup-order/"
+    },
+    {
+      "document_id": "docker-compose-how-tos-environment-variables-variable-interpolation",
+      "title": "Variable Interpolation",
+      "category": "Docker",
+      "path": "content/manuals/compose/how-tos/environment-variables/variable-interpolation.md",
+      "source_url": "https://docs.docker.com/compose/how-tos/environment-variables/variable-interpolation/"
+    },
+    {
+      "document_id": "docker-compose-how-tos-environment-variables-envvars-precedence",
+      "title": "Environment Variable Precedence",
+      "category": "Docker",
+      "path": "content/manuals/compose/how-tos/environment-variables/envvars-precedence.md",
+      "source_url": "https://docs.docker.com/compose/how-tos/environment-variables/envvars-precedence/"
+    },
+    {
+      "document_id": "docker-engine-storage-volumes",
+      "title": "Volumes",
+      "category": "Docker",
+      "path": "content/manuals/engine/storage/volumes.md",
+      "source_url": "https://docs.docker.com/engine/storage/volumes/"
+    },
+    {
+      "document_id": "docker-engine-storage-bind-mounts",
+      "title": "Bind Mounts",
+      "category": "Docker",
+      "path": "content/manuals/engine/storage/bind-mounts.md",
+      "source_url": "https://docs.docker.com/engine/storage/bind-mounts/"
+    },
+    {
+      "document_id": "docker-build-concepts-dockerfile",
+      "title": "Dockerfile Overview",
+      "category": "Docker",
+      "path": "content/manuals/build/concepts/dockerfile.md",
+      "source_url": "https://docs.docker.com/build/concepts/dockerfile/"
+    },
+    {
+      "document_id": "docker-build-building-multi-stage",
+      "title": "Multi-stage Builds",
+      "category": "Docker",
+      "path": "content/manuals/build/building/multi-stage.md",
+      "source_url": "https://docs.docker.com/build/building/multi-stage/"
+    },
+    {
+      "document_id": "docker-build-cache-invalidation",
+      "title": "Build Cache Invalidation",
+      "category": "Docker",
+      "path": "content/manuals/build/cache/invalidation.md",
+      "source_url": "https://docs.docker.com/build/cache/invalidation/"
+    },
+    {
+      "document_id": "langgraph-overview",
+      "title": "LangGraph Overview",
+      "category": "LangGraph",
+      "path": "src/oss/langgraph/overview.mdx",
+      "source_url": "https://docs.langchain.com/oss/python/langgraph/overview"
+    },
+    {
+      "document_id": "langgraph-quickstart",
+      "title": "LangGraph Quickstart",
+      "category": "LangGraph",
+      "path": "src/oss/langgraph/quickstart.mdx",
+      "source_url": "https://docs.langchain.com/oss/python/langgraph/quickstart"
+    },
+    {
+      "document_id": "langgraph-workflows-agents",
+      "title": "Workflows and Agents",
+      "category": "LangGraph",
+      "path": "src/oss/langgraph/workflows-agents.mdx",
+      "source_url": "https://docs.langchain.com/oss/python/langgraph/workflows-agents"
+    },
+    {
+      "document_id": "langgraph-agentic-rag",
+      "title": "Agentic RAG",
+      "category": "LangGraph",
+      "path": "src/oss/langgraph/agentic-rag.mdx",
+      "source_url": "https://docs.langchain.com/oss/python/langgraph/agentic-rag"
+    },
+    {
+      "document_id": "langgraph-graph-api",
+      "title": "Graph API",
+      "category": "LangGraph",
+      "path": "src/oss/langgraph/graph-api.mdx",
+      "source_url": "https://docs.langchain.com/oss/python/langgraph/graph-api"
+    },
+    {
+      "document_id": "langgraph-thinking-in-graph-api",
+      "title": "Thinking in LangGraph",
+      "category": "LangGraph",
+      "path": "src/oss/langgraph/thinking-in-graph-api.mdx",
+      "source_url": "https://docs.langchain.com/oss/python/langgraph/thinking-in-graph-api"
+    },
+    {
+      "document_id": "langgraph-streaming",
+      "title": "Streaming",
+      "category": "LangGraph",
+      "path": "src/oss/langgraph/streaming.mdx",
+      "source_url": "https://docs.langchain.com/oss/python/langgraph/streaming"
+    },
+    {
+      "document_id": "langgraph-persistence",
+      "title": "Persistence",
+      "category": "LangGraph",
+      "path": "src/oss/langgraph/persistence.mdx",
+      "source_url": "https://docs.langchain.com/oss/python/langgraph/persistence"
+    },
+    {
+      "document_id": "langgraph-interrupts",
+      "title": "Interrupts",
+      "category": "LangGraph",
+      "path": "src/oss/langgraph/interrupts.mdx",
+      "source_url": "https://docs.langchain.com/oss/python/langgraph/interrupts"
+    },
+    {
+      "document_id": "langgraph-test",
+      "title": "Test LangGraph Graphs",
+      "category": "LangGraph",
+      "path": "src/oss/langgraph/test.mdx",
+      "source_url": "https://docs.langchain.com/oss/python/langgraph/test"
+    }
+  ]
+}

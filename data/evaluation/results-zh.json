@@ -1,0 +1,723 @@
+{
+  "language": "zh",
+  "results": {
+    "vector": {
+      "recall_at_5": 0.7777777777777778,
+      "hit_at_5": 0.8148148148148148,
+      "answerable": 27,
+      "details": [
+        {
+          "id": "Q01",
+          "type": "fact",
+          "retrieved": [
+            "fastapi-async",
+            "fastapi-async",
+            "fastapi-async",
+            "fastapi-async",
+            "fastapi-async"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q02",
+          "type": "compare",
+          "retrieved": [
+            "fastapi-tutorial-background-tasks",
+            "celery-getting-started-first-steps-with-celery",
+            "celery-getting-started-first-steps-with-celery",
+            "celery-getting-started-introduction",
+            "celery-userguide-workers"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q03",
+          "type": "concept",
+          "retrieved": [
+            "fastapi-tutorial-security-oauth2-jwt",
+            "fastapi-tutorial-security-oauth2-jwt",
+            "fastapi-tutorial-security-oauth2-jwt",
+            "fastapi-tutorial-security-oauth2-jwt",
+            "fastapi-tutorial-security-oauth2-jwt"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q04",
+          "type": "fact",
+          "retrieved": [
+            "fastapi-tutorial-dependencies-dependencies-with-yield",
+            "fastapi-tutorial-dependencies-dependencies-with-yield",
+            "fastapi-async",
+            "fastapi-tutorial-dependencies-dependencies-with-yield",
+            "fastapi-tutorial-dependencies-dependencies-with-yield"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q05",
+          "type": "fact",
+          "retrieved": [
+            "fastapi-tutorial-cors",
+            "fastapi-tutorial-cors",
+            "fastapi-tutorial-cors",
+            "fastapi-tutorial-cors",
+            "fastapi-tutorial-cors"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q06",
+          "type": "concept",
+          "retrieved": [
+            "fastapi-tutorial-server-sent-events",
+            "fastapi-tutorial-server-sent-events",
+            "fastapi-tutorial-response-status-code",
+            "fastapi-tutorial-response-status-code",
+            "fastapi-tutorial-server-sent-events"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q07",
+          "type": "fact",
+          "retrieved": [
+            "vue-essentials-reactivity-fundamentals",
+            "vue-essentials-reactivity-fundamentals",
+            "vue-essentials-computed",
+            "vue-essentials-reactivity-fundamentals",
+            "vue-essentials-computed"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q08",
+          "type": "compare",
+          "retrieved": [
+            "vue-components-v-model",
+            "vue-components-v-model",
+            "vue-essentials-forms",
+            "vue-components-v-model",
+            "vue-essentials-forms"
+          ],
+          "recall": 0.5
+        },
+        {
+          "id": "Q09",
+          "type": "concept",
+          "retrieved": [
+            "vue-essentials-computed",
+            "vue-essentials-computed",
+            "vue-essentials-computed",
+            "vue-essentials-computed",
+            "vue-essentials-computed"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q10",
+          "type": "fact",
+          "retrieved": [
+            "vue-essentials-list",
+            "vue-essentials-forms",
+            "vue-essentials-computed",
+            "vue-essentials-conditional",
+            "vue-components-v-model"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q11",
+          "type": "concept",
+          "retrieved": [
+            "vue-essentials-watchers",
+            "vue-essentials-watchers",
+            "vue-essentials-watchers",
+            "vue-essentials-watchers",
+            "vue-essentials-watchers"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q12",
+          "type": "fact",
+          "retrieved": [
+            "redis-commands-pttl",
+            "celery-userguide-configuration",
+            "redis-commands-set",
+            "redis-commands-ttl",
+            "redis-commands-expire"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q13",
+          "type": "fact",
+          "retrieved": [
+            "redis-commands-expire",
+            "redis-commands-pttl",
+            "redis-commands-expire",
+            "redis-commands-incr",
+            "redis-commands-expire"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q14",
+          "type": "compare",
+          "retrieved": [
+            "redis-commands-pttl",
+            "redis-commands-pttl",
+            "redis-commands-expire",
+            "redis-commands-ttl",
+            "redis-commands-set"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q15",
+          "type": "compare",
+          "retrieved": [
+            "redis-commands-expire",
+            "redis-commands-expire",
+            "redis-commands-expire",
+            "redis-commands-expire",
+            "redis-commands-pttl"
+          ],
+          "recall": 0.5
+        },
+        {
+          "id": "Q16",
+          "type": "fact",
+          "retrieved": [
+            "redis-commands-set",
+            "celery-userguide-configuration",
+            "celery-userguide-configuration",
+            "celery-userguide-configuration",
+            "redis-commands-set"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q17",
+          "type": "fact",
+          "retrieved": [
+            "redis-commands-xread",
+            "redis-commands-xread",
+            "redis-commands-xread",
+            "redis-commands-xread",
+            "redis-commands-xadd"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q18",
+          "type": "concept",
+          "retrieved": [
+            "celery-getting-started-first-steps-with-celery",
+            "celery-userguide-configuration",
+            "celery-userguide-configuration",
+            "celery-userguide-configuration",
+            "celery-getting-started-first-steps-with-celery"
+          ],
+          "recall": 0.0
+        },
+        {
+          "id": "Q19",
+          "type": "fact",
+          "retrieved": [
+            "celery-userguide-tasks",
+            "celery-userguide-configuration",
+            "celery-userguide-configuration",
+            "celery-userguide-configuration",
+            "celery-userguide-calling"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q20",
+          "type": "fact",
+          "retrieved": [
+            "celery-getting-started-backends-and-brokers-redis",
+            "celery-userguide-configuration",
+            "celery-userguide-configuration",
+            "celery-getting-started-backends-and-brokers-redis",
+            "celery-userguide-configuration"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q21",
+          "type": "concept",
+          "retrieved": [
+            "celery-userguide-calling",
+            "celery-userguide-configuration",
+            "celery-userguide-tasks",
+            "celery-userguide-configuration",
+            "celery-getting-started-introduction"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q22",
+          "type": "fact",
+          "retrieved": [
+            "docker-compose-intro-compose-application-model",
+            "docker-compose-intro-compose-application-model",
+            "docker-compose-how-tos-environment-variables-variable-interpolation",
+            "docker-compose-how-tos-environment-variables-variable-interpolation",
+            "docker-compose-intro-compose-application-model"
+          ],
+          "recall": 0.0
+        },
+        {
+          "id": "Q23",
+          "type": "fact",
+          "retrieved": [
+            "docker-compose-intro-compose-application-model",
+            "docker-compose-how-tos-environment-variables-envvars-precedence",
+            "docker-compose-how-tos-environment-variables-variable-interpolation",
+            "docker-compose-intro-compose-application-model",
+            "docker-compose-intro-compose-application-model"
+          ],
+          "recall": 0.0
+        },
+        {
+          "id": "Q24",
+          "type": "concept",
+          "retrieved": [
+            "docker-build-concepts-dockerfile",
+            "docker-compose-intro-compose-application-model",
+            "docker-build-concepts-dockerfile",
+            "docker-build-concepts-dockerfile",
+            "docker-compose-how-tos-environment-variables-variable-interpolation"
+          ],
+          "recall": 0.0
+        },
+        {
+          "id": "Q25",
+          "type": "concept",
+          "retrieved": [
+            "docker-build-concepts-dockerfile",
+            "docker-build-concepts-dockerfile",
+            "docker-compose-how-tos-environment-variables-envvars-precedence",
+            "docker-compose-intro-compose-application-model",
+            "docker-compose-intro-compose-application-model"
+          ],
+          "recall": 0.0
+        },
+        {
+          "id": "Q26",
+          "type": "concept",
+          "retrieved": [
+            "langgraph-overview",
+            "langgraph-workflows-agents",
+            "langgraph-quickstart",
+            "langgraph-graph-api",
+            "langgraph-quickstart"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q27",
+          "type": "fact",
+          "retrieved": [
+            "langgraph-interrupts",
+            "langgraph-graph-api",
+            "langgraph-interrupts",
+            "langgraph-interrupts",
+            "langgraph-interrupts"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q28",
+          "type": "unanswerable",
+          "retrieved": [
+            "celery-userguide-configuration",
+            "fastapi-async",
+            "celery-userguide-configuration",
+            "celery-userguide-configuration",
+            "fastapi-async"
+          ],
+          "recall": null
+        },
+        {
+          "id": "Q29",
+          "type": "unanswerable",
+          "retrieved": [
+            "fastapi-tutorial-first-steps",
+            "fastapi-tutorial-first-steps",
+            "fastapi-tutorial-sql-databases",
+            "langgraph-streaming",
+            "fastapi-tutorial-first-steps"
+          ],
+          "recall": null
+        },
+        {
+          "id": "Q30",
+          "type": "unanswerable",
+          "retrieved": [
+            "fastapi-async",
+            "celery-userguide-configuration",
+            "fastapi-tutorial-first-steps",
+            "fastapi-tutorial-first-steps",
+            "fastapi-async"
+          ],
+          "recall": null
+        }
+      ]
+    },
+    "bm25": {
+      "recall_at_5": 0.8888888888888888,
+      "hit_at_5": 0.9259259259259259,
+      "answerable": 27,
+      "details": [
+        {
+          "id": "Q01",
+          "type": "fact",
+          "retrieved": [
+            "fastapi-tutorial-dependencies",
+            "fastapi-async",
+            "fastapi-async",
+            "fastapi-async",
+            "fastapi-async"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q02",
+          "type": "compare",
+          "retrieved": [
+            "fastapi-tutorial-background-tasks",
+            "fastapi-tutorial-background-tasks",
+            "fastapi-tutorial-background-tasks",
+            "fastapi-tutorial-background-tasks",
+            "fastapi-tutorial-background-tasks"
+          ],
+          "recall": 0.5
+        },
+        {
+          "id": "Q03",
+          "type": "concept",
+          "retrieved": [
+            "fastapi-tutorial-security-oauth2-jwt",
+            "fastapi-tutorial-security-oauth2-jwt",
+            "fastapi-tutorial-security-oauth2-jwt",
+            "fastapi-tutorial-security-oauth2-jwt",
+            "fastapi-tutorial-security-oauth2-jwt"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q04",
+          "type": "fact",
+          "retrieved": [
+            "fastapi-tutorial-dependencies-dependencies-with-yield",
+            "fastapi-tutorial-dependencies-dependencies-with-yield",
+            "fastapi-tutorial-dependencies-dependencies-with-yield",
+            "fastapi-tutorial-dependencies-dependencies-with-yield",
+            "fastapi-tutorial-dependencies-dependencies-with-yield"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q05",
+          "type": "fact",
+          "retrieved": [
+            "fastapi-tutorial-cors",
+            "fastapi-tutorial-middleware",
+            "fastapi-tutorial-cors",
+            "fastapi-tutorial-cors",
+            "fastapi-tutorial-cors"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q06",
+          "type": "concept",
+          "retrieved": [
+            "fastapi-tutorial-server-sent-events",
+            "fastapi-tutorial-server-sent-events",
+            "fastapi-tutorial-server-sent-events",
+            "fastapi-tutorial-server-sent-events",
+            "fastapi-tutorial-server-sent-events"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q07",
+          "type": "fact",
+          "retrieved": [
+            "vue-essentials-component-basics",
+            "vue-essentials-template-syntax",
+            "vue-essentials-component-basics",
+            "vue-essentials-reactivity-fundamentals",
+            "vue-essentials-reactivity-fundamentals"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q08",
+          "type": "compare",
+          "retrieved": [
+            "vue-components-v-model",
+            "vue-components-v-model",
+            "vue-components-v-model",
+            "vue-components-v-model",
+            "vue-essentials-forms"
+          ],
+          "recall": 0.5
+        },
+        {
+          "id": "Q09",
+          "type": "concept",
+          "retrieved": [
+            "vue-essentials-computed",
+            "vue-essentials-computed",
+            "vue-essentials-computed",
+            "vue-essentials-computed",
+            "vue-essentials-computed"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q10",
+          "type": "fact",
+          "retrieved": [
+            "vue-essentials-list",
+            "vue-essentials-list",
+            "vue-essentials-list",
+            "vue-components-props",
+            "vue-essentials-list"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q11",
+          "type": "concept",
+          "retrieved": [
+            "vue-essentials-watchers",
+            "vue-essentials-watchers",
+            "vue-essentials-watchers",
+            "vue-essentials-watchers",
+            "vue-essentials-watchers"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q12",
+          "type": "fact",
+          "retrieved": [
+            "redis-commands-persist",
+            "redis-commands-ttl",
+            "redis-commands-ttl",
+            "redis-commands-pttl",
+            "redis-commands-expire"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q13",
+          "type": "fact",
+          "retrieved": [
+            "redis-commands-persist",
+            "redis-commands-expire",
+            "redis-commands-incr",
+            "redis-commands-expire",
+            "redis-commands-pttl"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q14",
+          "type": "compare",
+          "retrieved": [
+            "redis-commands-pttl",
+            "redis-commands-pttl",
+            "redis-commands-pttl",
+            "redis-commands-persist",
+            "redis-commands-ttl"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q15",
+          "type": "compare",
+          "retrieved": [
+            "redis-commands-expire",
+            "redis-commands-persist",
+            "redis-commands-incr",
+            "redis-commands-expire",
+            "redis-commands-persist"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q16",
+          "type": "fact",
+          "retrieved": [
+            "redis-commands-persist",
+            "redis-commands-pttl",
+            "celery-userguide-configuration",
+            "celery-userguide-configuration",
+            "celery-userguide-configuration"
+          ],
+          "recall": 0.0
+        },
+        {
+          "id": "Q17",
+          "type": "fact",
+          "retrieved": [
+            "redis-commands-xread",
+            "redis-commands-xread",
+            "redis-commands-xadd",
+            "redis-commands-xadd",
+            "redis-commands-xread"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q18",
+          "type": "concept",
+          "retrieved": [
+            "celery-getting-started-first-steps-with-celery",
+            "celery-getting-started-introduction",
+            "celery-getting-started-introduction",
+            "celery-userguide-configuration",
+            "celery-userguide-workers"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q19",
+          "type": "fact",
+          "retrieved": [
+            "celery-userguide-calling",
+            "celery-userguide-tasks",
+            "celery-userguide-tasks",
+            "celery-userguide-calling",
+            "celery-userguide-tasks"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q20",
+          "type": "fact",
+          "retrieved": [
+            "celery-getting-started-backends-and-brokers-redis",
+            "celery-getting-started-backends-and-brokers-redis",
+            "celery-getting-started-backends-and-brokers-redis",
+            "celery-userguide-configuration",
+            "celery-userguide-monitoring"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q21",
+          "type": "concept",
+          "retrieved": [
+            "celery-userguide-tasks",
+            "celery-userguide-calling",
+            "celery-userguide-calling",
+            "celery-userguide-calling",
+            "celery-userguide-configuration"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q22",
+          "type": "fact",
+          "retrieved": [
+            "docker-compose-intro-compose-application-model",
+            "docker-compose-how-tos-networking",
+            "docker-compose-intro-compose-application-model",
+            "docker-compose-intro-compose-application-model",
+            "docker-compose-intro-compose-application-model"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q23",
+          "type": "fact",
+          "retrieved": [
+            "docker-compose-intro-compose-application-model",
+            "docker-compose-how-tos-networking",
+            "docker-compose-intro-compose-application-model",
+            "docker-compose-intro-compose-application-model",
+            "docker-compose-intro-compose-application-model"
+          ],
+          "recall": 0.0
+        },
+        {
+          "id": "Q24",
+          "type": "concept",
+          "retrieved": [
+            "docker-compose-how-tos-networking",
+            "docker-build-concepts-dockerfile",
+            "docker-engine-storage-volumes",
+            "docker-engine-storage-volumes",
+            "docker-engine-storage-volumes"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q25",
+          "type": "concept",
+          "retrieved": [
+            "docker-build-building-multi-stage",
+            "docker-compose-how-tos-environment-variables-variable-interpolation",
+            "docker-build-building-multi-stage",
+            "docker-compose-how-tos-environment-variables-variable-interpolation",
+            "docker-engine-storage-volumes"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q26",
+          "type": "concept",
+          "retrieved": [
+            "langgraph-workflows-agents",
+            "langgraph-workflows-agents",
+            "langgraph-interrupts",
+            "langgraph-quickstart",
+            "langgraph-agentic-rag"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q27",
+          "type": "fact",
+          "retrieved": [
+            "langgraph-interrupts",
+            "langgraph-interrupts",
+            "langgraph-interrupts",
+            "langgraph-graph-api",
+            "langgraph-graph-api"
+          ],
+          "recall": 1.0
+        },
+        {
+          "id": "Q28",
+          "type": "unanswerable",
+          "retrieved": [],
+          "recall": null
+        },
+        {
+          "id": "Q29",
+          "type": "unanswerable",
+          "retrieved": [
+            "fastapi-tutorial-server-sent-events"
+          ],
+          "recall": null
+        },
+        {
+          "id": "Q30",
+          "type": "unanswerable",
+          "retrieved": [],
+          "recall": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,77 @@
+x-python: &python
+  image: mini-ai-platform-python:local
+  build: ./backend
+  environment:
+    DATABASE_URL: postgresql+psycopg://mini:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@db:5432/mini
+    JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET}
+    DEMO_PASSWORD: ${DEMO_PASSWORD:?set DEMO_PASSWORD}
+    OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+    CACHE_URL: redis://redis:6379/0
+    BROKER_URL: redis://redis:6379/1
+    INDEX_DIR: /indexes
+  volumes:
+    - indexes:/indexes
+    - model-cache:/model-cache
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: mini
+      POSTGRES_DB: mini
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "mini", "-d", "mini"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  api:
+    <<: *python
+    command: ["sh", "-c", "python -m app.seed && uvicorn app.main:app --host 0.0.0.0 --port 8000"]
+    ports:
+      - "127.0.0.1:${BACKEND_PORT:-8000}:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "from urllib.request import urlopen; urlopen('http://127.0.0.1:8000/api/health', timeout=2)"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  worker:
+    <<: *python
+    command: ["celery", "-A", "app.tasks:celery", "worker", "--concurrency=1", "--loglevel=INFO"]
+    depends_on:
+      api:
+        condition: service_healthy
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "127.0.0.1:${FRONTEND_PORT:-8080}:80"
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+  redisdata:
+  indexes:
+  model-cache:
